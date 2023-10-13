@@ -36,7 +36,7 @@ public class KaKaoLoginController {
 	private final KakaoLoginBean kakaoLoginBean;
 	private final UserinfoSecurityService userinfoSecurityService;
 	
-	//카카오 로그인 페이지를 요청하기 위한 요청 처리 메소드
+	//카카오 로그인 페이지를 요청하기 위한 요청 처리 메소드.
 	@RequestMapping("/login")
 	public String login(HttpSession session) throws UnsupportedEncodingException {
 		String kakaoAuthUrl=kakaoLoginBean.getAuthorizationUrl(session);
